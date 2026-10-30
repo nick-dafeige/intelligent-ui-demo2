@@ -1,0 +1,22 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.workbuddy-ai/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local docs 
+doc/
