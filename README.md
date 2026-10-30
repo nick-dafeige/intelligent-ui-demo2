@@ -29,7 +29,9 @@ python3 server.py
 
 OpenAI defaults to `gpt-4.1-mini` (override with `OPENAI_MODEL`). If you have both keys, set `AI_PROVIDER=deepseek` or `AI_PROVIDER=openai` explicitly.
 
-**Important:** Never put an API key in the HTML, paste one into the browser, or publicly expose this server. The key stays server-side. The local endpoint binds to 127.0.0.1. Live mode makes paid API requests to the configured model. The live-model path has not been verified with a real API key in this environment.
+**Important:** Never put an API key in the HTML, paste one into the browser, or publicly expose this server. The key stays server-side. The local endpoint binds to 127.0.0.1. Live mode makes paid API requests to the configured model.
+
+The DeepSeek live path has been verified end to end against the chat completions endpoint (`deepseek-chat`): responses validate and render. The OpenAI path uses the Responses API with a strict JSON schema and has not been exercised in this environment. Scripted mode needs no key at all — open `index.html` and everything works offline.
 
 ## What the demo proves
 
